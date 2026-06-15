@@ -77,7 +77,7 @@ export default function Home() {
   const isFiltering = searchQuery !== "" || selectedCategory !== null;
 
   return (
-    <div className="flex flex-col min-h-screen bg-gray-50/20">
+    <div className="flex flex-col min-h-screen bg-gray-50/20 dark:bg-slate-950">
       {/* Sticky Header with centered search */}
       <Header searchQuery={searchQuery} onSearchChange={setSearchQuery} />
 

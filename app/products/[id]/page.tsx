@@ -56,7 +56,7 @@ export default function ProductPage({ params }: PageProps) {
     .slice(0, 4);
 
   return (
-    <div className="flex flex-col min-h-screen bg-gray-50/20">
+    <div className="flex flex-col min-h-screen bg-gray-50/20 dark:bg-slate-950">
       {/* Header handles search and redirects to home */}
       <Header searchQuery={searchQuery} onSearchChange={handleSearchChange} />
 

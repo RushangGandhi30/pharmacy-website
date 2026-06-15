@@ -3,24 +3,24 @@ import { ArrowRight, ShieldCheck, Truck, Percent } from "lucide-react";
 
 export default function HeroSection() {
   return (
-    <section className="relative overflow-hidden bg-gradient-to-br from-teal-50 via-teal-100/40 to-emerald-50 py-16 md:py-24 border-b border-teal-100/50">
+    <section className="relative overflow-hidden bg-gradient-to-br from-teal-50 via-teal-100/40 to-emerald-50 dark:from-slate-950 dark:via-teal-950/10 dark:to-slate-950 py-16 md:py-24 border-b border-teal-100/50 dark:border-slate-900">
       {/* Decorative background shapes */}
-      <div className="absolute top-0 right-0 -z-10 h-[400px] w-[400px] rounded-full bg-teal-200/20 blur-3xl" />
-      <div className="absolute bottom-0 left-0 -z-10 h-[300px] w-[300px] rounded-full bg-emerald-200/20 blur-3xl" />
+      <div className="absolute top-0 right-0 -z-10 h-[400px] w-[400px] rounded-full bg-teal-200/20 dark:bg-teal-900/10 blur-3xl" />
+      <div className="absolute bottom-0 left-0 -z-10 h-[300px] w-[300px] rounded-full bg-emerald-200/20 dark:bg-emerald-900/10 blur-3xl" />
 
       <div className="container mx-auto px-4 lg:px-8">
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
           {/* Text Content */}
           <div className="lg:col-span-7 text-left space-y-6">
-            <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-teal-100 text-teal-800 text-xs font-semibold uppercase tracking-wider">
+            <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-teal-100 dark:bg-teal-950/50 text-teal-800 dark:text-teal-300 text-xs font-semibold uppercase tracking-wider">
               <Percent className="w-4 h-4" /> Save up to 25% on your first order
             </div>
             
-            <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold tracking-tight text-gray-900 leading-tight">
+            <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold tracking-tight text-gray-900 dark:text-white leading-tight">
               Your Premium Neighborhood <span className="text-teal-600">Pharmacy</span>, Online.
             </h1>
             
-            <p className="text-lg text-gray-600 max-w-xl">
+            <p className="text-lg text-gray-600 dark:text-gray-300 max-w-xl">
               Get genuine medicines, daily wellness supplements, skin care, baby care, and healthcare devices delivered directly to your doorstep.
             </p>
 
@@ -33,39 +33,39 @@ export default function HeroSection() {
               </Link>
               <Link
                 href="#why-choose-us"
-                className="inline-flex items-center gap-2 bg-white hover:bg-gray-50 text-gray-700 font-medium px-6 py-3 rounded-full border border-gray-200 shadow-sm hover:shadow transition-all hover:-translate-y-0.5"
+                className="inline-flex items-center gap-2 bg-white dark:bg-slate-900 hover:bg-gray-50 dark:hover:bg-slate-800 text-gray-700 dark:text-gray-250 font-medium px-6 py-3 rounded-full border border-gray-200 dark:border-slate-800 shadow-sm hover:shadow transition-all hover:-translate-y-0.5"
               >
                 Learn More
               </Link>
             </div>
 
             {/* Quick trust metrics */}
-            <div className="grid grid-cols-3 gap-4 pt-6 border-t border-teal-100/60 max-w-lg">
+            <div className="grid grid-cols-3 gap-4 pt-6 border-t border-teal-100/60 dark:border-slate-800 max-w-lg">
               <div className="flex items-center gap-2">
-                <div className="p-2 rounded-lg bg-teal-100/80 text-teal-700">
+                <div className="p-2 rounded-lg bg-teal-100/80 dark:bg-teal-950/40 text-teal-700 dark:text-teal-400">
                   <ShieldCheck className="w-5 h-5" />
                 </div>
                 <div>
-                  <p className="text-xs font-bold text-gray-900">100% Genuine</p>
-                  <p className="text-[10px] text-gray-500">Quality Assured</p>
+                  <p className="text-xs font-bold text-gray-900 dark:text-gray-150">100% Genuine</p>
+                  <p className="text-[10px] text-gray-500 dark:text-gray-400">Quality Assured</p>
                 </div>
               </div>
               <div className="flex items-center gap-2">
-                <div className="p-2 rounded-lg bg-teal-100/80 text-teal-700">
+                <div className="p-2 rounded-lg bg-teal-100/80 dark:bg-teal-950/40 text-teal-700 dark:text-teal-400">
                   <Truck className="w-5 h-5" />
                 </div>
                 <div>
-                  <p className="text-xs font-bold text-gray-900">Fast Delivery</p>
-                  <p className="text-[10px] text-gray-500">At Your Doorstep</p>
+                  <p className="text-xs font-bold text-gray-900 dark:text-gray-150">Fast Delivery</p>
+                  <p className="text-[10px] text-gray-500 dark:text-gray-400">At Your Doorstep</p>
                 </div>
               </div>
               <div className="flex items-center gap-2">
-                <div className="p-2 rounded-lg bg-teal-100/80 text-teal-700">
+                <div className="p-2 rounded-lg bg-teal-100/80 dark:bg-teal-950/40 text-teal-700 dark:text-teal-400">
                   <Percent className="w-5 h-5" />
                 </div>
                 <div>
-                  <p className="text-xs font-bold text-gray-900">Best Prices</p>
-                  <p className="text-[10px] text-gray-500">Huge Discounts</p>
+                  <p className="text-xs font-bold text-gray-900 dark:text-gray-150">Best Prices</p>
+                  <p className="text-[10px] text-gray-500 dark:text-gray-400">Huge Discounts</p>
                 </div>
               </div>
             </div>

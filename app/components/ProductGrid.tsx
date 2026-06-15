@@ -23,11 +23,11 @@ export default function ProductGrid({
       <section className="py-10 border-b border-gray-100/60" id="catalog">
         <div className="container mx-auto px-4 lg:px-8">
           <div className="mb-8">
-            <h2 className="text-2xl md:text-3xl font-extrabold text-gray-900 tracking-tight">
+            <h2 className="text-2xl md:text-3xl font-extrabold text-gray-900 dark:text-white tracking-tight">
               {title}
             </h2>
             {subtitle && (
-              <p className="mt-2 text-gray-500 text-xs md:text-sm">
+              <p className="mt-2 text-gray-500 dark:text-gray-400 text-xs md:text-sm">
                 {subtitle}
               </p>
             )}
@@ -38,10 +38,10 @@ export default function ProductGrid({
             {Array.from({ length: limit || 4 }).map((_, i) => (
               <div
                 key={i}
-                className="bg-white/80 rounded-2xl border border-gray-200/60 p-4 shadow-sm flex flex-col h-full space-y-3 animate-pulse"
+                className="bg-white/80 dark:bg-slate-900/80 rounded-2xl border border-gray-200/60 dark:border-slate-800 p-4 shadow-sm flex flex-col h-full space-y-3 animate-pulse"
               >
                 {/* Image skeleton */}
-                <div className="w-full h-40 bg-gray-200 rounded-xl" />
+                <div className="w-full h-40 bg-gray-200 dark:bg-slate-800 rounded-xl" />
                 {/* Brand skeleton */}
                 <div className="h-3 bg-gray-200 rounded w-1/4" />
                 {/* Title skeleton */}
@@ -69,9 +69,9 @@ export default function ProductGrid({
     return (
       <section className="py-16 text-center" id="catalog">
         <div className="container mx-auto px-4 max-w-md">
-          <div className="p-8 bg-gray-50 rounded-2xl border border-gray-200/50">
-            <p className="text-gray-500 font-semibold mb-2">No products found</p>
-            <p className="text-xs text-gray-400">
+          <div className="p-8 bg-gray-50 dark:bg-slate-900 rounded-2xl border border-gray-200/50 dark:border-slate-800">
+            <p className="text-gray-500 dark:text-gray-300 font-semibold mb-2">No products found</p>
+            <p className="text-xs text-gray-400 dark:text-gray-500">
               Try adjusting your search terms or category filter to find what you are looking for.
             </p>
           </div>
@@ -84,11 +84,11 @@ export default function ProductGrid({
     <section className="py-10 border-b border-gray-100/60 scroll-mt-20" id="catalog">
       <div className="container mx-auto px-4 lg:px-8">
         <div className="mb-8">
-          <h2 className="text-2xl md:text-3xl font-extrabold text-gray-900 tracking-tight">
+          <h2 className="text-2xl md:text-3xl font-extrabold text-gray-900 dark:text-white tracking-tight">
             {title}
           </h2>
           {subtitle && (
-            <p className="mt-2 text-gray-500 text-xs md:text-sm">
+            <p className="mt-2 text-gray-500 dark:text-gray-400 text-xs md:text-sm">
               {subtitle}
             </p>
           )}
